@@ -42,6 +42,7 @@ namespace TimeStampGenerator
                     StopButton.Visibility = Visibility.Visible;
                 }
                 string directoryPath = string.Empty;
+                double Interval= Double.Parse(ConfigurationManager.AppSettings["intervalInMs"]);
                 VistaFolderBrowserDialog dlg = new VistaFolderBrowserDialog();
                 dlg.SelectedPath = ConfigurationManager.AppSettings["directoryPath"].ToString();
                 dlg.ShowNewFolderButton = true;
